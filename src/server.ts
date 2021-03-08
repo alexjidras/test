@@ -63,15 +63,15 @@ server.on('connection', (socket) => {
 
 });
 
-server.on('listening',function(){
+server.on('listening', () => {
   console.log('Server is listening');
 });
 
-server.on('error',function(error){
+server.on('error', (error) => {
   console.log('Error: >>' + error);
 });
 
-server.on('close',function(){
+server.on('close', () => {
     console.log('Server closed');
 });
 
