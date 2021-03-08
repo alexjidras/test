@@ -40,11 +40,6 @@ server.on('connection', (socket) => {
         }
     });
 
-    socket.on('drain', () => {
-        console.log('drain occured');
-        socket.resume();
-    });
-
     socket.on('error', (error) => {
         console.log('Error: >>' + error);
     });
