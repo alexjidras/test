@@ -1,0 +1,28 @@
+{
+  "name": "bodyhealth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && NODE_ENV=production node dist/index.js",
+    "start:dev": "NODE_ENV=development nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "expect": "^1.20.1",
+    "nanoid": "^3.1.20",
+    "underscore": "^1.8.3",
+    "ws": "^7.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "@types/ws": "^7.4.0",
+    "mocha": "^2.5.3",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3"
+  }
+}
